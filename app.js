@@ -13,7 +13,7 @@ if (gender === "male") {
 } else {
   pronoun = "their";
 }
-
+ 
 //conditional for ages
 //if age is less than or equal 18 -> set xp = "just beginning "
 //if age greater than or equal 19 && less than or equal to 40 
@@ -43,4 +43,46 @@ animalHouse(2,7);
 
 if (count > 2) {
   console.log('We have too many ' + animal  + "s");
+}
+//variable with an avenger
+var hero = "Hulk";
+
+//function with one parameter with a conditional inside
+//create 4 conditions for different avengers 
+function avengerAssemble(avenger){
+  if (avenger == 'IronMan'){
+    console.log('up, up and away');
+  }
+
+  else if (avenger == 'CaptainAmerica'){
+    console.log ('shield me ');
+
+    }
+  else if (avenger == 'BlackWidow'){
+    console.log ('ugh' );
+  }
+  else 
+    console.log ('Sorry, you are not needed for this mission');
+}
+//invoke avengerAssembly and pass variable
+avengerAssemble(hero);
+
+var lights = true;
+
+if (lights == true){
+  console.log('And then there was light');
+}
+else (lights == false){
+  console.log('Lights Out');
+}
+
+var carType = 'Toyota';
+var color = 'blue';
+var num = 11;
+
+if (carType == 'Toyota' && color == 'blue'|| carType == 'Lamborghini' && color == 'red' || carType == 'Tesla' && color == 'black' ){
+  console.log ('We have '+ num + ' '+ color + ' ' + carType);
+}
+else {
+  console.log ("We don't have any "+ color + ' ' + carType+"s in stock");
 }
